@@ -45,7 +45,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: chitanderu/web
+          repository: innei-dev/Yohaku
           token: ${{ secrets.GH_PAT }}
           fetch-depth: 0
           lfs: true
@@ -81,7 +81,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: chitanderu/web
+          repository: innei-dev/Yohaku
           token: ${{ secrets.GH_PAT }}
           fetch-depth: 0
           lfs: true
@@ -126,7 +126,7 @@ jobs:
       - name: Checkout deploy repo
         uses: actions/checkout@v4
         with:
-          repository: chitanderu/shiroi-deploy-action
+          repository: Jaaayden/shiroi-deploy-action
           token: ${{ secrets.GH_PAT }}
 
       - name: Restore cached Build Artifacts
